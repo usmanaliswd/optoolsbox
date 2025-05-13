@@ -64,11 +64,11 @@ const data = {
         },
         {
           title: "BMI Calculator",
-          url: "#",
+          url: "/bmi-calculator",
         },
         {
           title: "EMI Calculator",
-          url: "#",
+          url: "/emi-calculator",
         },
         {
           title: "Date difference",

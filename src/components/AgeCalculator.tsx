@@ -289,7 +289,7 @@ export default function AgeCalculator() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-center text-white text-3xl font-bold">
+                      <p className="text-center text-white text-xl md:text-3xl font-bold">
                         {liveAge ? liveAge.years : age.years}
                       </p>
                     </CardContent>
@@ -304,7 +304,7 @@ export default function AgeCalculator() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-center text-white text-3xl font-bold">
+                      <p className="text-center text-white text-xl md:text-3xl font-bold">
                         {liveAge ? liveAge.months : age.months}
                       </p>
                     </CardContent>
@@ -319,7 +319,7 @@ export default function AgeCalculator() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-center text-white text-3xl font-bold">
+                      <p className="text-center text-white text-xl md:text-3xl font-bold">
                         {liveAge ? liveAge.days : age.days}
                       </p>
                     </CardContent>
@@ -334,7 +334,7 @@ export default function AgeCalculator() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-center text-white text-3xl font-bold">
+                      <p className="text-center text-white text-xl md:text-3xl font-bold">
                         {(liveAge ? liveAge.hours : age.hours).toLocaleString()}
                       </p>
                     </CardContent>
@@ -349,7 +349,7 @@ export default function AgeCalculator() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-center text-white text-3xl font-bold animate-pulse">
+                      <p className="text-center text-white text-xl md:text-3xl font-bold animate-pulse">
                         {(liveAge
                           ? liveAge.minutes
                           : age.minutes
@@ -367,7 +367,7 @@ export default function AgeCalculator() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-center text-white text-3xl font-bold animate-pulse">
+                      <p className="text-center text-white text-xl md:text-3xl font-bold animate-pulse">
                         {(liveAge
                           ? liveAge.seconds
                           : age.seconds
@@ -397,14 +397,17 @@ export default function AgeCalculator() {
           )}
         </CardContent>
         <CardFooter className="text-sm text-white/40 justify-center pt-0 pb-4 mt-7">
-          <div className="flex gap-3">
-            <Link href="/calculators/bmi">
-              <span className="px-5 py-2 bg-black text-white rounded-lg hover:bg-gray-900 transition">
+          <div className="flex flex-col md:flex-row gap-3 items-center justify-center w-full">
+            <Link href="/bmi-calculator" className="w-full md:w-auto">
+              <span className="block w-full text-center px-5 py-2 bg-black text-white rounded-lg hover:bg-gray-900 transition">
                 Try BMI Calculator
               </span>
             </Link>
-            <Link href="/tools/image-tools/converter">
-              <span className="px-5 py-2 bg-gray-200 text-black rounded-lg hover:bg-gray-300 transition">
+            <Link
+              href="/tools/image-tools/converter"
+              className="w-full md:w-auto"
+            >
+              <span className="block w-full text-center px-5 py-2 bg-gray-200 text-black rounded-lg hover:bg-gray-300 transition">
                 Use Image Converter
               </span>
             </Link>
